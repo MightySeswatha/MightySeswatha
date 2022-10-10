@@ -1,3 +1,20 @@
+
+@font-face{
+    font-family: 'Inter', sans-serif;
+    src: url("fonts/Inter-Regular.ttf");
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+font-family: 'Inter', sans-serif;
+}
+
 .none{
 display: none;
 }
@@ -25,7 +42,9 @@ width: 40%;
 height: 80%;
 align-items: center;
 justify-content: center;
-background-color: #352a55;
+background: -webkit-linear-gradient(180deg, rgb(56, 49, 90), rgb(45, 10, 64));
+background: -moz-linear-gradient(180deg, rgb(56, 49, 90), rgb(45, 10, 64));
+background: linear-gradient(180deg, rgb(56, 49, 90), rgb(45, 10, 64));
 }
 
 .block_INform{
@@ -67,7 +86,6 @@ margin-left: 30px;
   text-decoration: none;
   display: inline-block;
   position: relative;
-  font-size: 20px;
   font-weight: 700;
   transition: 1s;
 }
@@ -126,7 +144,9 @@ display: flex;
 }
 
 .user,
-.pass{
+.pass,
+.reap_pass,
+.email{
 box-sizing: border-box;
 color: #7f838c;
 padding-left: 10px;
@@ -140,6 +160,7 @@ margin-top: 64px;
 .input_reg{
 box-sizing: border-box;
 margin-top: 14px;
+padding: 0 10px;
 background-color: #5d5175;
 height: 32px;
 border-radius: 10px;
@@ -147,7 +168,9 @@ border: none;
 color: #fff;
 }
 
-.pass{
+.email,
+.pass,
+.reap_pass{
 box-sizing: border-box;
 margin-top: 18px;
 }
@@ -174,11 +197,11 @@ background-repeat: no-repeat;
 }
 
 .container:hover{
-background-image: url("check.svg");
+background-image: url("../images/check.svg");
 }
 
 .container_active{
-background-image: url("check.svg");
+background-image: url("../images/check.svg");
 }
 
 /**/
@@ -209,6 +232,10 @@ transition: 1s;
 background-color: #69587a;
 }
 
+.block_INform2 .btn{
+margin-top: 54px;
+}
+
 hr{
 margin-top: 44px;
 width: 99.8%;
@@ -233,4 +260,12 @@ transition: 1s;
 
 .title a:hover{
 color: #fff;
+}
+
+.block_INform2{
+box-sizing: border-box;
+position: relative;
+flex-direction: column;
+width: 80%;
+height: 90%;
 }
