@@ -9,4 +9,114 @@ height: 100%;
   font-size: 20px;
 }
 
+.user,
+.pass,
+.reap_pass,
+.email{
+font-size: 16px;
+}
+
+.l7{
+font-size: 16px;
+}
+
+.btn{
+font-size: 20px;
+}
+
+.title{
+font-size: 16px;
+}
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px){
+
+  .block_form{
+  width: 90%;
+  height: 70%;
+  }
+
+.head_inner a{
+  font-size: 24px;
+}
+
+.user,
+.pass,
+.reap_pass,
+.email{
+font-size: 18px;
+}
+
+.l7{
+font-size: 18px;
+}
+
+.btn{
+font-size: 22px;
+}
+
+.title{
+font-size: 18px;
+}
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+
+.block_form{
+width: 75%;
+height: 65%;
+}
+
+.head_inner a{
+  font-size: 28px;
+}
+
+.user,
+.pass,
+.reap_pass,
+.email{
+font-size: 20px;
+}
+
+.l7{
+font-size: 20px;
+}
+
+.btn{
+font-size: 24px;
+}
+
+.title{
+font-size: 20px;
+}
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px){
+
+.head_inner a{
+  font-size: 32px;
+}
+
+.user,
+.pass,
+.reap_pass,
+.email{
+font-size: 22px;
+}
+
+.l7{
+font-size: 22px;
+}
+
+.btn{
+font-size: 26px;
+}
+
+.title{
+font-size: 22px;
+}
+
 }
