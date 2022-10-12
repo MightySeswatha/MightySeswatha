@@ -16,6 +16,10 @@ height: 100%;
 font-size: 16px;
 }
 
+.input_reg{
+font-size: 16px;
+}
+
 .l7{
 font-size: 16px;
 }
@@ -25,31 +29,35 @@ font-size: 20px;
 }
 
 .title{
-font-size: 16px;
+font-size: 17px;
 }
 
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px){
 
-  .block_form{
-  width: 90%;
-  height: 70%;
-  }
+.block_form{
+width: 100vw;
+height: 140vw;
+}
 
 .head_inner a{
-  font-size: 24px;
+font-size: 24px;
 }
 
 .user,
 .pass,
 .reap_pass,
 .email{
-font-size: 18px;
+font-size: 20px;
+}
+
+.input_reg{
+font-size: 20px;
 }
 
 .l7{
-font-size: 18px;
+font-size: 20px;
 }
 
 .btn{
@@ -57,7 +65,7 @@ font-size: 22px;
 }
 
 .title{
-font-size: 18px;
+font-size: 20px;
 }
 
 }
@@ -65,36 +73,9 @@ font-size: 18px;
 @media screen and (min-width: 600px) and (max-width: 900px){
 
 .block_form{
-width: 75%;
-height: 65%;
+width: 80vw;
+height: 100vw;
 }
-
-.head_inner a{
-  font-size: 28px;
-}
-
-.user,
-.pass,
-.reap_pass,
-.email{
-font-size: 20px;
-}
-
-.l7{
-font-size: 20px;
-}
-
-.btn{
-font-size: 24px;
-}
-
-.title{
-font-size: 20px;
-}
-
-}
-
-@media screen and (min-width: 900px) and (max-width: 1024px){
 
 .head_inner a{
   font-size: 32px;
@@ -104,19 +85,73 @@ font-size: 20px;
 .pass,
 .reap_pass,
 .email{
-font-size: 22px;
-}
-
-.l7{
-font-size: 22px;
-}
-
-.btn{
 font-size: 26px;
 }
 
+.input_reg{
+font-size: 26px;
+height: 38px;
+}
+
+.l7{
+font-size: 26px;
+}
+
+.btn{
+font-size: 28px;
+height: 44px;
+}
+
 .title{
-font-size: 22px;
+font-size: 26px;
+}
+
+.container{
+width: 28px;
+height: 28px;
+}
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px){
+
+.block_form{
+width: 80vw;
+height: 100vw;
+}
+
+.head_inner a{
+  font-size: 36px;
+}
+
+.user,
+.pass,
+.reap_pass,
+.email{
+font-size: 28px;
+}
+
+.input_reg{
+font-size: 28px;
+height: 40px;
+}
+
+.l7{
+font-size: 28px;
+}
+
+.btn{
+font-size: 30px;
+height: 44px;
+}
+
+.title{
+font-size: 28px;
+}
+
+.container{
+width: 30px;
+height: 30px;
 }
 
 }
