@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 		<link rel="stylesheet" href="../styles/main.css">
 		<link rel="stylesheet" href="../styles/relative.css">
 		<script src="../scripts/script1.js"></script>
@@ -10,27 +13,41 @@
 	</head>
 	<body>
 
+<div class="display1">
+<div class="display_shadow" id="body"></div>
+<div class="frame1 none" id="frame1">
+<div class="frame1_head">
+<div class="btn_cross" id="cross"></div>
+</div>
+<div class="frame1_inner">
+<p>Enter email</p>
+<input type="text">
+<p>Enter code</p>
+<input type="text">
+<p class="inst">To regain access to your account, enter your email address, then enter the code sent to you.</p>
+</div>
+</div>
+</div>
+
 <div class="display">
-
 <div class="block_form">
-
 <div class="block_INform" id="form1">
 <div class="row">
 <div class="head_inner"><a id="active">SIGN IN<div class="line"></div></a></div>
 <div class="head_inner" id="signUP"><a id="off">SIGN UP</a></div>
 </div>
 <div class="reg_form">
-<p class="user">Username</p>
-<input type="text" class="input_reg">
+<p class="user" id="test">Username</p>
+<input type="text" class="input_reg" id="user1">
 <p class="pass">Password</p>
-<input type="password" class="input_reg">
+<input type="password" class="input_reg" id="pass1">
 <div class="check">
 <div class="container" id="container"></div>
 <div class="l7">Keep Me Signed In</div>
 </div>
-<a class="btn">SIGN IN</a>
+<a class="btn" id="btn1">SIGN IN</a>
 <hr>
-<div class="title"><a href="index2.html">Forgot Password?</a></div>
+<div class="title"><a id="forgot">Forgot Password?</a></div>
 </div>
 </div>
 
@@ -42,20 +59,19 @@
 </div>
 <div class="reg_form">
 <p class="user">Username</p>
-<input type="text" class="input_reg">
+<input type="text" class="input_reg" id="user2">
 <p class="email">Email</p>
-<input type="text" class="input_reg">
+<input type="text" class="input_reg" id="email2">
 <p class="pass">Password</p>
-<input type="password" class="input_reg">
+<input type="password" class="input_reg" id="pass2">
 <p class="reap_pass">Repeat Password</p>
-<input type="password" class="input_reg">
-<a class="btn">SIGN UP</a>
+<input type="password" class="input_reg" id="reap_pass2">
+<a class="btn" id="btn2">SIGN UP</a>
 </div>
 </div>
 
 
 </div>
-
-	</div>
+</div>
 	</body>
 </html>

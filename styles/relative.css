@@ -155,3 +155,140 @@ height: 30px;
 }
 
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1280px){
+
+  .user{
+  margin-top: 48px;
+  }
+
+  .block_form{
+  width: 55vw;
+  height: 60vw;
+  }
+
+  .head_inner a{
+    font-size: 31px;
+  }
+
+  .user,
+  .pass,
+  .reap_pass,
+  .email{
+  font-size: 24px;
+  }
+
+  .input_reg{
+  font-size: 24px;
+  height: 40px;
+  }
+
+  .l7{
+  font-size: 24px;
+  }
+
+  .btn{
+  font-size: 30px;
+  height: 40px;
+  }
+
+  .title{
+  font-size: 25px;
+  }
+
+  .container{
+  width: 24px;
+  height: 24px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1600px){
+
+  .user{
+  margin-top: 32px;
+  }
+
+  .block_form{
+  width: 40vw;
+  height: 45vw;
+  }
+
+  .head_inner a{
+    font-size: 32px;
+  }
+
+  .user,
+  .pass,
+  .reap_pass,
+  .email{
+  font-size: 25px;
+  }
+
+  .input_reg{
+  font-size: 25px;
+  height: 40px;
+  }
+
+  .l7{
+  font-size: 25px;
+  }
+
+  .btn{
+  font-size: 30px;
+  height: 44px;
+  }
+
+  .title{
+  font-size: 25px;
+  }
+
+  .container{
+  width: 24px;
+  height: 24px;
+  }
+
+}
+
+@media screen and (min-width: 1600px){
+
+  .block_form{
+  width: 40vw;
+  height: 45vw;
+  }
+
+  .head_inner a{
+    font-size: 36px;
+  }
+
+  .user,
+  .pass,
+  .reap_pass,
+  .email{
+  font-size: 28px;
+  }
+
+  .input_reg{
+  font-size: 28px;
+  height: 40px;
+  }
+
+  .l7{
+  font-size: 28px;
+  }
+
+  .btn{
+  font-size: 34px;
+  height: 44px;
+  }
+
+  .title{
+  font-size: 28px;
+  }
+
+  .container{
+  width: 24px;
+  height: 24px;
+  }
+
+}
