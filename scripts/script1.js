@@ -18,8 +18,10 @@ const cross = document.getElementById("cross");
 const btn2 = document.getElementById("btn2");
 const user2 = document.getElementById("user2");
 const email2 = document.getElementById("email2");
+const pass2 = document.getElementById("pass2");
 const reap_pass2 = document.getElementById("reap_pass2");
 
+const text_pass2 = document.getElementById("text_pass2");
 const text_pass3 = document.getElementById("text_pass3");
 
 check.onclick = function(){
@@ -88,7 +90,7 @@ body.classList.remove("shadow");
 frame1.classList.toggle("none");
 }
 
-/**/
+/*FRAME2*/
 
 user2.onclick = function(){
 if(user2.value == "Enter your username!"){
@@ -96,15 +98,6 @@ if(user2.value == "Enter your username!"){
   user2.classList.remove("error1");
 }
 else{user2.classList.remove("accept1");}
-}
-
-pass2.onclick = function(){
-if(pass2.value == "Enter your password!"){
-  pass2.value = "";
-  pass2.setAttribute('type', 'password');
-  pass2.classList.remove("error1");
-}
-else{pass2.classList.remove("accept1");}
 }
 
 email2.onclick = function(){
@@ -115,25 +108,36 @@ if(email2.value == "Enter your email!"){
 else{email2.classList.remove("accept1");}
 }
 
+/*PASSWORD CHECK*/
+pass2.onclick = function(){
+if(pass2.value == "Enter your password!"){
+  pass2.value = "";
+  pass2.setAttribute('type', 'password');
+  pass2.classList.remove("error1");
+}
+else{pass2.classList.remove("accept1");
+pass2.classList.remove("error1");
+text_pass2.textContent = "";
+}
+}
+
 reap_pass2.onclick = function(){
 if(reap_pass2.value == "Repeat your password!"){
   reap_pass2.value = "";
   reap_pass2.setAttribute('type', 'password');
   reap_pass2.classList.remove("error1");
 }
-else{reap_pass2.classList.remove("accept1");}
+else{reap_pass2.classList.remove("accept1");
+reap_pass2.classList.remove("error1");
+text_pass3.textContent = "";
 }
-
+}
+/*PASSWORD CHECK2*/
 btn2.addEventListener('click', function() {
 
-  if(pass2.value != reap_pass2.value){
-  text_pass3.textContent = "The password does not match";
-  text_pass3.classList.add("error2");
-  text_pass2.textContent = "The password does not match";
-  text_pass2.classList.add("error2");
+  if(user2.value != "" && pass2.value != "" && user2.value != "Enter your username!" && pass2.value != "Enter your password!" && pass2.value == reap_pass2.value){
+  window.location.href = 'index2.html';
   }
-
-  if(user2.value != "" && pass2.value != "" && user2.value != "Enter your username!" && pass2.value != "Enter your password!" && pass2.value == reap_pass2.value){alert("test");}
 
   if(user2.value === "" || user2.value == "Enter your username!") {
     user2.classList.remove("accept1");
@@ -143,23 +147,6 @@ btn2.addEventListener('click', function() {
     user2.classList.add("accept1");
   }
 
-  if(pass2.value === "" || pass2.value == "Enter your password!") {
-    pass2.classList.remove("accept1");
-    pass2.setAttribute('type', 'text');
-    pass2.value = "Enter your password!";
-    pass2.classList.add("error1");
-  }
-  else if(pass2.value != reap_pass2.value){
-    pass2.classList.add("error1");
-    reap_pass2.classList.add("error1");
-  }
-  else {
-    pass2.value = "";
-    reap_pass2.value = "";
-    pass2.classList.add("accept1");
-  }
-
-
   if(email2.value === "" || email2.value == "Enter your email!") {
     email2.classList.remove("accept1");
     email2.value = "Enter your email!";
@@ -168,20 +155,36 @@ btn2.addEventListener('click', function() {
     email2.classList.add("accept1");
   }
 
+  if(pass2.value === "" || pass2.value == "Enter your password!") {
+    pass2.classList.remove("accept1");
+    pass2.setAttribute('type', 'text');
+    pass2.value = "Enter your password!";
+    pass2.classList.add("error1");
+  }
+  else if(pass2.value == reap_pass2.value){
+    pass2.classList.add("accept1");
+    text_pass2.textContent = "";
+  }
+  else{
+    pass2.classList.remove("accept1");
+    pass2.classList.add("error1");
+    text_pass2.textContent = "The password does not match";
+  }
+
   if(reap_pass2.value === "" || reap_pass2.value == "Repeat your password!") {
     reap_pass2.classList.remove("accept1");
     reap_pass2.setAttribute('type', 'text');
     reap_pass2.value = "Repeat your password!";
     reap_pass2.classList.add("error1");
   }
-  else if(pass2.value != reap_pass2.value){
-    pass2.classList.add("error1");
-    reap_pass2.classList.add("error1");
-  }
-  else {
-    pass2.value = "";
-    reap_pass2.value = "";
+  else if(pass2.value == reap_pass2.value){
     reap_pass2.classList.add("accept1");
+    text_pass3.textContent = "";
+  }
+  else{
+    reap_pass2.classList.remove("accept1");
+    reap_pass2.classList.add("error1");
+    text_pass3.textContent = "The password does not match";
   }
 
 }, false)

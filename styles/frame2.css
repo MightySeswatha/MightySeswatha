@@ -1,0 +1,23 @@
+#text_pass2,
+#text_pass3{
+margin-top: 5px;
+width: 100%;
+text-align: right;
+height: 0;
+}
+
+.error2{
+color: red;
+}
+
+.block_INform2{
+box-sizing: border-box;
+position: relative;
+flex-direction: column;
+width: 80%;
+height: 90%;
+}
+
+.block_INform2 .btn{
+margin-top: 36px;
+}
