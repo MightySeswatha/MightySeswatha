@@ -20,6 +20,8 @@ const user2 = document.getElementById("user2");
 const email2 = document.getElementById("email2");
 const reap_pass2 = document.getElementById("reap_pass2");
 
+const text_pass3 = document.getElementById("text_pass3");
+
 check.onclick = function(){
 check.classList.toggle("container_active");
 }
@@ -124,7 +126,14 @@ else{reap_pass2.classList.remove("accept1");}
 
 btn2.addEventListener('click', function() {
 
-  if(user2.value != "" && pass2.value != "" && user2.value != "Enter your username!" && pass2.value != "Enter your password!"){alert("test");}
+  if(pass2.value != reap_pass2.value){
+  text_pass3.textContent = "The password does not match";
+  text_pass3.classList.add("error2");
+  text_pass2.textContent = "The password does not match";
+  text_pass2.classList.add("error2");
+  }
+
+  if(user2.value != "" && pass2.value != "" && user2.value != "Enter your username!" && pass2.value != "Enter your password!" && pass2.value == reap_pass2.value){alert("test");}
 
   if(user2.value === "" || user2.value == "Enter your username!") {
     user2.classList.remove("accept1");
@@ -139,9 +148,17 @@ btn2.addEventListener('click', function() {
     pass2.setAttribute('type', 'text');
     pass2.value = "Enter your password!";
     pass2.classList.add("error1");
-  } else {
+  }
+  else if(pass2.value != reap_pass2.value){
+    pass2.classList.add("error1");
+    reap_pass2.classList.add("error1");
+  }
+  else {
+    pass2.value = "";
+    reap_pass2.value = "";
     pass2.classList.add("accept1");
   }
+
 
   if(email2.value === "" || email2.value == "Enter your email!") {
     email2.classList.remove("accept1");
@@ -156,7 +173,14 @@ btn2.addEventListener('click', function() {
     reap_pass2.setAttribute('type', 'text');
     reap_pass2.value = "Repeat your password!";
     reap_pass2.classList.add("error1");
-  } else {
+  }
+  else if(pass2.value != reap_pass2.value){
+    pass2.classList.add("error1");
+    reap_pass2.classList.add("error1");
+  }
+  else {
+    pass2.value = "";
+    reap_pass2.value = "";
     reap_pass2.classList.add("accept1");
   }
 

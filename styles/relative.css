@@ -32,6 +32,11 @@ font-size: 20px;
 font-size: 17px;
 }
 
+#text_pass2,
+#text_pass3{
+font-size: 12px;
+}
+
 }
 
 @media screen and (min-width: 400px) and (max-width: 600px){
@@ -66,6 +71,11 @@ font-size: 22px;
 
 .title{
 font-size: 20px;
+}
+
+#text_pass2,
+#text_pass3{
+font-size: 12px;
 }
 
 }
@@ -111,6 +121,11 @@ width: 28px;
 height: 28px;
 }
 
+#text_pass2,
+#text_pass3{
+font-size: 12px;
+}
+
 }
 
 @media screen and (min-width: 900px) and (max-width: 1024px){
@@ -152,6 +167,11 @@ font-size: 28px;
 .container{
 width: 30px;
 height: 30px;
+}
+
+#text_pass2,
+#text_pass3{
+font-size: 14px;
 }
 
 }
@@ -201,6 +221,11 @@ height: 30px;
   height: 24px;
   }
 
+  #text_pass2,
+  #text_pass3{
+  font-size: 14px;
+  }
+
 }
 
 @media screen and (min-width: 1280px) and (max-width: 1600px){
@@ -248,6 +273,11 @@ height: 30px;
   height: 24px;
   }
 
+  #text_pass2,
+  #text_pass3{
+  font-size: 14px;
+  }
+
 }
 
 @media screen and (min-width: 1600px){
@@ -289,6 +319,11 @@ height: 30px;
   .container{
   width: 24px;
   height: 24px;
+  }
+
+  #text_pass2,
+  #text_pass3{
+  font-size: 20px;
   }
 
 }

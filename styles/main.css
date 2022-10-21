@@ -274,6 +274,8 @@ color: #fff;
 .email,
 .pass,
 .reap_pass{
+position: relative;
+display: block;
 box-sizing: border-box;
 margin-top: 18px;
 }
@@ -379,7 +381,19 @@ color: red;
 border: 1px solid red;
 }
 
+.error2{
+color: red;
+}
+
 .accept1{
 color: green;
 border: 1px solid green;
+}
+
+#text_pass2,
+#text_pass3{
+margin-top: 5px;
+width: 100%;
+text-align: right;
+height: 0;
 }
