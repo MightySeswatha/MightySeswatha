@@ -189,4 +189,18 @@ btn2.addEventListener('click', function() {
 
 }, false)
 
+/*RE PASSWORD*/
+
+const re_email = document.getElementById("re_email");
+const re_code = document.getElementById("re_code");
+const send = document.getElementById("send");
+
+send.addEventListener('click', function() {
+if(re_email.value == "" || re_email == "Enter your email!"){
+re_email.value = "Enter your email!";
+re_email.classList.add("error1");
+}
+
+}, false)
+
 }
